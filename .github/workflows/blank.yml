@@ -1,0 +1,47 @@
+name: Main Build Process
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  build:
+    env:
+      GITHUB_TOKEN: ${{ secrets.TOKEN }}
+    runs-on: ubuntu-latest-4-cores	
+    steps:
+      - name: Clone
+        run: git clone "https://$GITHUB_TOKEN@github.com/batsura-vs/proxy_master"
+
+      - uses: actions/setup-java@v1.4.4
+        with:
+          java-version: "12.x"
+
+      - uses: subosito/flutter-action@v2.10.0
+        with:
+          channel: "stable"
+
+      - name: Directory lookup
+        working-directory: ./proxy_master
+        run: ls .. && echo ../* && echo ./*
+
+      - name: Code analyze
+        working-directory: ./proxy_master
+        run: sh ./build-scripts/flutter-analyze.sh
+
+      - name: Build apk
+        working-directory: ./proxy_master
+        run: sh ./build-scripts/build-apk.sh
+
+      - name: Flutter clean
+        working-directory: ./proxy_master
+        run: flutter clean
+
+      - name: Update READEME
+        working-directory: ./proxy_master
+        run: sh ./build-scripts/update-readme.sh
+
+      - name: Push to git
+        working-directory: ./proxy_master
+        run: sh ./build-scripts/push-apk.sh
