@@ -3,7 +3,7 @@ cd proxy_master || exit 1
 #flutter build apk --release
 #mv ./build/app/outputs/flutter-apk/app-release.apk ./release.apk
 cd ../app/android || exit 1
-rm ../../proxy_master
+rm -rf ../../proxy_master
 ./build-scripts/version "$MESSAGE"
 cat version.json
 git config --global user.email "batsura.vs@gmail.com"
