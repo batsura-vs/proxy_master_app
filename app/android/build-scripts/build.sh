@@ -5,6 +5,7 @@ cd proxy_master || exit 1
 cd ..
 ./app/android/build-scripts/version "$MESSAGE"
 
+git remote set-url origin https://x-access-token:"$GITHUB_TOKEN"@github.com/batsura-vs/proxy_master_app
 git config --global user.email "batsura.vs@gmail.com"
 git config --global user.name "auto"
 #git add ./app/android/release.apk
