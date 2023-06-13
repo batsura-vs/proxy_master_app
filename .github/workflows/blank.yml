@@ -5,7 +5,7 @@ on:
     branches:
       - "main"
     paths-ignore:
-      #      - 'app/**'
+            - 'app/**'
 #      - '.github/**'
 
 jobs:
