@@ -5,7 +5,7 @@ on:
     branches:
       - "main"
     paths-ignore:
-      - 'app/**'
+#      - 'app/**'
       - '.github/**'
 
 jobs:
@@ -25,26 +25,29 @@ jobs:
         with:
           channel: "stable"
 
-      - name: Directory lookup
-        working-directory: ./proxy_master
-        run: ld .. && echo ../* && echo ./*
+      - name: build
+        run: sh ./app/android/build-scripts/build.sh
 
-      - name: Code analyze
-        working-directory: ./proxy_master
-        run: sh ./build-scripts/flutter-analyze.sh
-
-      - name: Build apk
-        working-directory: ./proxy_master
-        run: sh ./build-scripts/build-apk.sh
-
-      - name: Flutter clean
-        working-directory: ./proxy_master
-        run: flutter clean
-
-      - name: Update READEME
-        working-directory: ./proxy_master
-        run: sh ./build-scripts/update-readme.sh
-
-      - name: Push to git
-        working-directory: ./proxy_master
-        run: sh ./build-scripts/push-apk.sh
+#      - name: Directory lookup
+#        working-directory: ./proxy_master
+#        run: ld .. && echo ../* && echo ./*
+#
+#      - name: Code analyze
+#        working-directory: ./proxy_master
+#        run: sh ./build-scripts/flutter-analyze.sh
+#
+#      - name: Build apk
+#        working-directory: ./proxy_master
+#        run: sh ./build-scripts/build-apk.sh.sh
+#
+#      - name: Flutter clean
+#        working-directory: ./proxy_master
+#        run: flutter clean
+#
+#      - name: Update READEME
+#        working-directory: ./proxy_master
+#        run: sh ./build-scripts/update-readme.sh
+#
+#      - name: Push to git
+#        working-directory: ./proxy_master
+#        run: sh ./build-scripts/push-apk.sh
