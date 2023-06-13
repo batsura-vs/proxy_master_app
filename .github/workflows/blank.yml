@@ -4,12 +4,15 @@ on:
   push:
     branches:
       - "main"
+    paths-ignore:
+      - 'app/**'
+      - '.github/**'
 
 jobs:
   build:
     env:
       GITHUB_TOKEN: ${{ secrets.TOKEN }}
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - name: Clone
         run: git clone "https://$GITHUB_TOKEN@github.com/batsura-vs/proxy_master"
@@ -24,7 +27,7 @@ jobs:
 
       - name: Directory lookup
         working-directory: ./proxy_master
-        run: ls .. && echo ../* && echo ./*
+        run: ld .. && echo ../* && echo ./*
 
       - name: Code analyze
         working-directory: ./proxy_master
