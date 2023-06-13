@@ -12,6 +12,7 @@ jobs:
   build:
     env:
       GITHUB_TOKEN: ${{ secrets.TOKEN }}
+      MESSAGE: ${{ github.event.head_commit.message }}
     runs-on: macos-latest
     steps:
       - name: Checkout
