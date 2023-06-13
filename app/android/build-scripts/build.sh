@@ -5,6 +5,7 @@ cd proxy_master || exit 1
 cd ..
 rm -rf proxy_master
 ./app/android/build-scripts/version "$MESSAGE"
+mv ./version.json ./app/android/version.json
 git config --global user.email "batsura.vs@gmail.com"
 git config --global user.name "auto"
 git add -A
