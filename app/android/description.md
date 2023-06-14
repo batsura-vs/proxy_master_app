@@ -1,4 +1,3 @@
-# Update version 1.0.0
+# Update version 1.0.1
 ## New features
-- auto update
-- new proxy provider
+- Now you can edit added services
