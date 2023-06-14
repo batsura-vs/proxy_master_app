@@ -1,6 +1,6 @@
 git clone "https://$GITHUB_TOKEN@github.com/batsura-vs/proxy_master"
 cd proxy_master || exit 1
-flutter build apk --release
+flutter build apk
 mv ./build/app/outputs/flutter-apk/app-release.apk ../app/android/release.apk
 cd ..
 ./app/android/build-scripts/version "$MESSAGE" ./proxy_master/pubspec.yaml
