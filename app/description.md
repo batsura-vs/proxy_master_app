@@ -1,2 +1,3 @@
 # Windows Support
-# Small redesign
+# Bug fix
+## Windows auto update
