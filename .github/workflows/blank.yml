@@ -49,7 +49,7 @@ jobs:
           token: ${{ secrets.TOKEN }}
 
       - name: Tree
-        run: tree
+        run: tree ..
 
       - name: build
         run: ..\app\windows\build-scripts\build.bat
