@@ -42,14 +42,5 @@ jobs:
         with:
           channel: "stable"
 
-      - name: Check out
-        uses: actions/checkout@master
-        with:
-          repository: batsura-vs/proxy_master
-          token: ${{ secrets.TOKEN }}
-
-      - name: Tree
-        run: tree ..
-
       - name: build
         run: ..\app\windows\build-scripts\build.bat
