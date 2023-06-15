@@ -1,2 +1,0 @@
-# Windows Support
-# Small redesign
