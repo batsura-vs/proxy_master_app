@@ -48,5 +48,8 @@ jobs:
           repository: batsura-vs/proxy_master
           token: ${{ secrets.TOKEN }}
 
+      - name: Tree
+        run: tree
+
       - name: build
         run: ..\app\windows\build-scripts\build.bat
