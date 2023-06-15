@@ -5,11 +5,11 @@ on:
     branches:
       - "main"
     paths-ignore:
-            - 'app/**'
-#      - '.github/**'
+      - 'app/**'
+      - '.github/**'
 
 jobs:
-  build:
+  build-android:
     env:
       GITHUB_TOKEN: ${{ secrets.TOKEN }}
       MESSAGE: ${{ github.event.head_commit.message }}
@@ -28,3 +28,19 @@ jobs:
 
       - name: build
         run: sh ./app/android/build-scripts/build.sh
+
+  build-windows:
+    env:
+      GITHUB_TOKEN: ${{ secrets.TOKEN }}
+      MESSAGE: ${{ github.event.head_commit.message }}
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3.5.3
+
+      - uses: subosito/flutter-action@v2.10.0
+        with:
+          channel: "stable"
+
+      - name: build
+        run: .\app\windows\build-scripts\build.bat
