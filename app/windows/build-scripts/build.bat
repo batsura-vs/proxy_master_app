@@ -1,4 +1,3 @@
-cd proxy_master
 flutter build windows
 .\Appacker_v1.3.11.exe -s "build\windows\runner\Release" -e ".\proxy_master.exe"
 mv build\windows\runner\proxy_master.exe ..\app\windows\proxy_master.exe
