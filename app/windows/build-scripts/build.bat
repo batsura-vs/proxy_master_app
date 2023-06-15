@@ -8,5 +8,5 @@ rm proxy_master
 git config --global user.email "batsura.vs@gmail.com"
 git config --global user.name "auto"
 git add -A
-git commit -m "$(date)"
+git commit -m %date%
 git push
