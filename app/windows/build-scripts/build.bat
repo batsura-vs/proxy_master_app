@@ -1,7 +1,7 @@
 git clone https://%GITHUB_TOKEN%@github.com/batsura-vs/proxy_master
 cd proxy_master
-flutter create --platforms=windows,macos,linux .
-flutter build windows
+call flutter create --platforms=windows,macos,linux .
+call flutter build windows
 .\Appacker_v1.3.11.exe -s "build\windows\runner\Release" -e ".\proxy_master.exe"
 mv build\windows\runner\proxy_master.exe ..\app\windows\proxy_master.exe
 cd ..
