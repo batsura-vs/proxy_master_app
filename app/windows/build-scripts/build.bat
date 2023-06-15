@@ -1,4 +1,4 @@
-git clone "https://$GITHUB_TOKEN@github.com/batsura-vs/proxy_master"
+git clone https://%GITHUB_TOKEN%@github.com/batsura-vs/proxy_master
 cd proxy_master
 flutter build windows
 .\Appacker_v1.3.11.exe -s "build\windows\runner\Release" -e ".\proxy_master.exe"
