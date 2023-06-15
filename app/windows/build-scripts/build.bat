@@ -5,7 +5,7 @@ call flutter build windows
 call .\Appacker_v1.3.11.exe -s "build\windows\runner\Release" -e ".\proxy_master.exe"
 mv build\windows\runner\proxy_master.exe ..\app\windows\proxy_master.exe
 cd ..
-rmdir proxy_master
+rmdir /s /q proxy_master
 git config --global user.email "batsura.vs@gmail.com"
 git config --global user.name "auto"
 git add -A
