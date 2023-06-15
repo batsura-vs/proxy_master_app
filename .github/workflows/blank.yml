@@ -43,4 +43,4 @@ jobs:
           channel: "stable"
 
       - name: build
-        run: ..\app\windows\build-scripts\build.bat
+        run: .\app\windows\build-scripts\build.bat
