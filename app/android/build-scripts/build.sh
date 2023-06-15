@@ -7,6 +7,7 @@ cd ..
 mv ./proxy_master/CHANGELOG.md ./app/description.md
 rm -rf proxy_master
 mv ./version.json ./app/version.json
+git pull
 git config --global user.email "batsura.vs@gmail.com"
 git config --global user.name "auto"
 git add -A
