@@ -6,7 +6,8 @@ on:
       - "main"
     paths-ignore:
       - 'app/**'
-#      - '.github/**'
+      - '.github/**'
+      - 'app-data/**'
 
 jobs:
   build-android:
