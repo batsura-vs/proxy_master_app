@@ -1,5 +1,6 @@
 {
   "English": {
+    "mainHiText": "Welcome!\n🤗",
     "licenseAppBarTitle": "License key",
     "licenseTextFieldLabel": "Enter your license key",
     "licenseTextFieldError": "Invalid license",
@@ -83,6 +84,7 @@
     "turnOnProxyManagedByAdguard": "Managed by adguard"
   },
   "Русский": {
+    "mainHiText": "Добро пожаловать!\n🤗",
     "licenseAppBarTitle": "Лицензия",
     "licenseTextFieldLabel": "Введите ваш лицензионный ключ",
     "licenseTextFieldError": "Недействительная лицензия",
