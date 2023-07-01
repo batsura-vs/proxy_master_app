@@ -138,7 +138,7 @@
     "settingsScreenAdguardIntegration": "Режим совместимости с Adguard",
     "settingsScreenAdguardPassword": "Пароль для Adguard",
     "settingsScreenAdguardPasswordDesc": "Пароль от автоматизации Adguard",
-    "settingsScreenProxyCheckTimeout": "Пртаймаут проверки прокси",
+    "settingsScreenProxyCheckTimeout": "Таймаут проверки прокси",
     "settingsScreenProxyCheckTimeoutDesc": "Время на выполнение одной проверки (в секундах)",
     "settingsScreenParallelRequests": "Количество параллельных запросов",
     "settingsScreenParallelRequestsDesc": "Количество запросов выполняющихся одновременно",
