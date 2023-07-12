@@ -81,7 +81,8 @@
     "speedTestWidgetProxyNotUsed": "Proxy not used",
     "speedTestWidgetNotSet": "Not set",
     "turnOnProxyWidgetConnection": "Connection",
-    "turnOnProxyManagedByAdguard": "Managed by adguard"
+    "turnOnProxyManagedByAdguard": "Managed by adguard",
+    "turnOnProxyWidgetNoProxy": "No proxy"
   },
   "Русский": {
     "mainHiText": "Добро пожаловать!\n🤗",
@@ -108,7 +109,7 @@
     "updateBottomSheetCloseText": "Закрыть",
     "updateBottomSheetUpdateButtonText": "Обновить",
     "webViewDialogNoProxyAvailable": "Нет доступных прокси",
-    "webViewDialogProxyChanged": "Выбран другой прокси: ",
+    "webViewDialogProxyChanged": "Прокси: ",
     "homeScreenAppFeatures": "Функции",
     "homeScreenProxy": "Прокси",
     "homeScreenFilters": "Фильтры",
@@ -165,6 +166,7 @@
     "speedTestWidgetProxyNotUsed": "Прокси не использовалось",
     "speedTestWidgetNotSet": "Не установлено",
     "turnOnProxyWidgetConnection": "Соединение",
-    "turnOnProxyManagedByAdguard": "Управляется adguard"
+    "turnOnProxyManagedByAdguard": "Управляется adguard",
+    "turnOnProxyWidgetNoProxy": "Нет прокси"
   }
 }
